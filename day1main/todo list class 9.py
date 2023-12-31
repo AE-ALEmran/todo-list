@@ -50,7 +50,7 @@ while True :
         massage= f"Todo {todo_to_remove} was remove from the list !!!!!!"
         print(massage)
     if '_' in user_choice:
-        print("Hey, Eneter the write variables!!!")
+        print("Hey, Eneter the write variablesjfoifiahfiuwhfeiwuhfiohfwaeoifhbgit!!!")
     if 'exit' in user_choice :
         break
 
