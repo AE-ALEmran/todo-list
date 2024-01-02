@@ -39,21 +39,26 @@ while True :
             with open('.idea/store.txt', 'w+') as file:            #txt file edit kora text ta add hobe , age hoto nah edit kora txt ta class 8
                 file.writelines(store)
         except ValueError :
-            user_choice = input("Enter show, add , Edit, exit, complete code :")
-            user_choice = user_choice.strip()
+            print("Your comment is not valid.")
+            continue
 
     elif user_choice.startswith('complete') :
-        number = int(user_choice[9:])
-        with open('.idea/store.txt', 'r') as file:   # after complete file must be save in txt file class 8
-            store = file.readlines()
-        index=number-1
-        todo_to_remove=store[index].strip('\n')                # store.pop() and massage ,,,, for use those 3 code class 8
-        store.pop(index)                                       # here strip() use for remove line gap
+        try :
+            number = int(user_choice[9:])
+            with open('.idea/store.txt', 'r') as file:   # after complete file must be save in txt file class 8
+                store = file.readlines()
+            index=number-1
+            todo_to_remove=store[index].strip('\n')                # store.pop() and massage ,,,, for use those 3 code class 8
+            store.pop(index)                                       # here strip() use for remove line gap
 
-        with open('.idea/store.txt', 'w+') as file:
-            file.writelines(store)
-        massage= f"Todo {todo_to_remove} was remove from the list !!!!!!"
-        print(massage)
+            with open('.idea/store.txt', 'w+') as file:
+                file.writelines(store)
+            massage= f"Todo {todo_to_remove} was remove from the list !!!!!!"
+            print(massage)
+        except IndexError :
+            print("Your enter number is out of the range .")
+            continue
+
     elif '_' in user_choice:
         print("Hey, Eneter the write variables!!!")
     elif user_choice.startswith('exit') :
