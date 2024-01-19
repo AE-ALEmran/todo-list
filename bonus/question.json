@@ -1,0 +1,9 @@
+[{"question_text": "What is Dalfin ?" ,
+  "alternatives" : ["Ampladesh", "fish","birds","Mammals"] ,
+  "correct_ans:": 3} ,
+  {"question_text": "What is Dalfin ?" ,
+    "alternatives" : ["Ampladesh", "fish","birds","Mammals"] ,
+    "correct_ans:": 2} ,
+  {"question_text": "What is Dalfin ?" ,
+    "alternatives" : ["Ampladesh", "fish","birds","Mammals"] ,
+    "correct_ans:" : 1}]
